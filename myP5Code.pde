@@ -2,7 +2,7 @@ setup = function() {
     size(400, 400);
 };
 
-var answer = 0;
+var answer = 1;
 
 draw = function(){
   background(100,100,100);
@@ -21,6 +21,7 @@ draw = function(){
 scale(.29);
 translate(490,590)
   drawUni()
+  translate(-300,-150)
   }
   
   if (answer == 2){
@@ -28,6 +29,28 @@ translate(490,590)
   text("NO",172,225)
   }
   
+  if (answer == 3){
+  textSize(40);
+  text("YES",162,235)
+  }
+  
+  if (answer == 4){
+  textSize(100);
+  text("❓",150,250)
+  }
+  
+  if (answer == 5){
+  textSize(15);
+  text("WAIT 1000",165, 210);
+  text("DAYS",177, 230);
+  
+  }
+  
+  if(answer == 6){
+  textSize(15);
+  text("lowkey...", 175,210);
+  text("prolly not",172,230);
+  }
   
   textSize(30);
   
@@ -42,10 +65,8 @@ text("✨",random(0,600),random(0,600));
 
 };
 
-
-
 mouseClicked = function(){
-  answer = round(random(1,5));
+  answer = round(random(1,6));
 };
 
 
@@ -157,4 +178,5 @@ fill(252, 3, 182);
   noStroke();
    fill(255, 252, 255)
   triangle(100,12,171,95,165,99)
+    scale(3.5);
 }

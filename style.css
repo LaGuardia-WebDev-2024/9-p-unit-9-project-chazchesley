@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poetsen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@16,22.6&display=swap');
+
+
 
 body {
   background-iMage: url("https://wallpapers.com/images/hd/blue-galaxy-jets-in-carina-a1sych1g3sa6t7gt.jpg");
@@ -6,19 +9,37 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   margin: auto;
-   font-family: "Poetsen One", serif;
+  font-family: "Honk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 16,
+    "SHLN" 22.6;
 }
 
 h1{
   font-size: 30px;
-  color: pink;
+  color: #9477a8;
 }
 
 #myCanvas {
   background-size: 600px 400px;
   border-radius: 30px;
-  border: 5px solid pink;
+  border: 5px solid #9477a8;
 }
 
+ .shimmer {
+  color: #9477a8;
+  display: inline-block;
+  mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
+  animation: shimmer 2.5s infinite;
+  font-size: 50px;
+  max-width: 600px;
+}
 
-
+@keyframes shimmer {
+  100% {
+    mask-position: left
+  }
+}
