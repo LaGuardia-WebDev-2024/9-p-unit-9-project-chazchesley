@@ -2,7 +2,7 @@ setup = function() {
     size(400, 400);
 };
 
-var answer = 1;
+var answer = 0;
 
 draw = function(){
   background(100,100,100);
@@ -52,6 +52,27 @@ translate(490,590)
   text("prolly not",172,230);
   }
   
+  if(answer == 7){
+  textSize(11);
+  text("d7",193,137);
+  text("1uu4",188,148)
+  text("ile1iisc",186,159);
+  text("01cmfjsfli",178,170);
+  text("ilu5dhgiu3v",174,181);
+  text("hc74y538iYojo",165,192);
+  text("sdfi1var3ll4viLuh",159,203);
+  text("3289hfsvoihvGp2ai",154,214);
+  text("heus8cnsoimfi23a6ic",150,225);
+  text("0kfwdf98fwj3ask53cns3",144,236);
+  text("nvcofhgw834D2487r93nf0",136,247);
+  text("3rf9unilush3hrd347vn94ifw3i",130,258);
+  text("nufe042nlsdnfs137coiosz03ol7l",124,269);
+  
+  
+  
+  }
+  
+  
   textSize(30);
   
   if(mousePressed){
@@ -66,7 +87,7 @@ text("✨",random(0,600),random(0,600));
 };
 
 mouseClicked = function(){
-  answer = round(random(1,6));
+  answer = round(random(1,7));
 };
 
 
