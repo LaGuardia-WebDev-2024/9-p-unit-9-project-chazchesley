@@ -5,12 +5,16 @@ setup = function() {
 var answer = 0;
 
 draw = function(){
-  background(100,100,100);
+  background(100,100,100,0);
   fill(0, 0, 0);
+  strokeWeight(5);
+  stroke(46, 0, 35);
   ellipse(200, 200, 375, 375);
-  fill(60, 0, 255);
+  fill(56, 0, 135);
+  strokeWeight(2);
+  stroke(28, 2, 64);
   triangle(200, 120, 280, 270, 120, 270);
-  fill(255, 255, 255);
+  fill(27, 130, 181);
   
   if (answer == 0) {
     text("CLICK FOR", 168, 200);
@@ -72,6 +76,11 @@ translate(490,590)
   
   }
   
+  if(answer==8){
+  textSize(40);
+  text(":3",182,225);
+  }
+  
   
   textSize(30);
   
@@ -87,7 +96,7 @@ text("✨",random(0,600),random(0,600));
 };
 
 mouseClicked = function(){
-  answer = round(random(1,7));
+  answer = round(random(1,8));
 };
 
 
